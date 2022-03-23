@@ -1,0 +1,94 @@
+.title{
+    margin-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    font-family:'Titillium Web', sans-serif;
+    background: linear-gradient(
+        to right,
+        hsl(211, 100%, 23%) 0%,
+        hsl(214deg 89% 29%) 3%,
+        hsl(216deg 79% 35%) 6%,
+        hsl(219deg 68% 41%) 10%,
+        hsl(221deg 57% 46%) 17%,
+        hsl(224deg 47% 52%) 26%,
+        hsl(227deg 36% 58%) 43%,
+        hsl(230deg 25% 64%) 67%,
+        hsl(232deg 14% 70%) 81%,
+        hsl(232deg 14% 67%) 89%,
+        hsl(232deg 13% 65%) 94%,
+        hsl(232deg 12% 62%) 97%,
+        hsl(232deg 11% 59%) 98%,
+        hsl(230deg 10% 57%) 100%,
+        hsl(232deg 9% 54%) 100%,
+        hsl(231deg 9% 52%) 100%,
+        hsl(231deg 8% 49%) 100%
+    );
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.content{
+    font-family:'Titillium Web', sans-serif;
+}
+.job-period{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 1%;
+}
+.job-description{
+    margin:2% 10% 0 10%;
+    font-size: 18px;
+}
+.achievements-header{
+    font-size: 25px;
+    margin:0.5% 10% 0 10%;
+}
+.achievements-list{
+    margin:0.5% 10% 0 13%;
+    font-size: 18px;
+}
+.yumbel-muni-image{
+    display: block;
+    margin: 0.5% auto 0 auto;
+    width: 200px;
+    height: 200px;
+}
+.sonda-muni-image{
+    display: block;
+    margin: 0.5% auto 0 auto;
+    width: 400px;
+    height: 200px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+    .title{
+        font-size: 1.5em;
+    }
+    .job-period{
+        font-size: 16px;
+    }
+    .yumbel-muni-image{
+        width: 100px;
+        height: 100px;
+    }
+    .job-description{
+        font-size: 13px;
+    }
+    .achievements-header{
+        font-size: 16px;
+    }
+    .achievements-list{
+        font-size: 13px;
+    }
+    .sonda-muni-image{
+        width: 300px;
+        height: 100px;
+    }
+}

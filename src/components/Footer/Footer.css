@@ -1,0 +1,116 @@
+.footer{
+    background: linear-gradient(
+        90deg,
+        hsl(211, 100%, 23%) 0%,
+        hsl(214deg 89% 29%) 3%,
+        hsl(216deg 79% 35%) 6%,
+        hsl(219deg 68% 41%) 10%,
+        hsl(221deg 57% 46%) 17%,
+        hsl(224deg 47% 52%) 26%,
+        hsl(227deg 36% 58%) 43%,
+        hsl(230deg 25% 64%) 67%,
+        hsl(232deg 14% 70%) 81%,
+        hsl(232deg 14% 67%) 89%,
+        hsl(232deg 13% 65%) 94%,
+        hsl(232deg 12% 62%) 97%,
+        hsl(232deg 11% 59%) 98%,
+        hsl(230deg 10% 57%) 100%,
+        hsl(232deg 9% 54%) 100%,
+        hsl(231deg 9% 52%) 100%,
+        hsl(231deg 8% 49%) 100%
+    );
+    clip-path: ellipse(300% 100% at -115% 100%);
+    padding: 70px 0;
+}
+.footer-container{
+    max-width: 1170px;
+    margin: 100px 0px 0px 30px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #04b388;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 700;
+    position: relative;
+    font-family:'Titillium Web', sans-serif;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #60ecbd;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    font-family:'Titillium Web', sans-serif;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #E6EFFF;
+    text-decoration: none;
+    font-weight: 500;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    font-family:'Titillium Web', sans-serif;
+}
+.footer-col ul li a:hover{
+    color: #04b388;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    font-family:'Titillium Web', sans-serif;
+}
+.footer-col .social-links a:hover{
+    color:#24262b;
+    background-color: #04b388;
+}
+.footer-col .social-links .phone-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Titillium Web', sans-serif;
+}
+.footer-col .social-links p{
+    display: block;
+    margin: 0px 0px -26px 50px;
+    color: #E6EFFF;
+}
+
+
+
+/* RESPONSIVE */
+
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,138 @@
+@keyframes slideInFromLeft{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromRight{
+    0%{
+        transform: translateX(100%);
+        mix-blend-mode: multiply;
+    }
+    100%{
+        transform: translateX(0);
+        mix-blend-mode: multiply;
+    }
+}
+/* @keyframes slideInFromDown{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(50%);
+    }
+} */
+.presentation{
+    overflow: hidden;
+    background:linear-gradient(
+        90deg,
+        hsl(211, 100%, 23%) 0%,
+        hsl(214deg 89% 29%) 3%,
+        hsl(216deg 79% 35%) 6%,
+        hsl(219deg 68% 41%) 10%,
+        hsl(221deg 57% 46%) 17%,
+        hsl(224deg 47% 52%) 26%,
+        hsl(227deg 36% 58%) 43%,
+        hsl(230deg 25% 64%) 67%,
+        hsl(232deg 14% 70%) 81%,
+        hsl(232deg 14% 67%) 89%,
+        hsl(232deg 13% 65%) 94%,
+        hsl(232deg 12% 62%) 97%,
+        hsl(232deg 11% 59%) 98%,
+        hsl(230deg 10% 57%) 100%,
+        hsl(232deg 9% 54%) 100%,
+        hsl(231deg 9% 52%) 100%,
+        hsl(231, 8%, 49%) 100%
+    );
+    clip-path: ellipse(300% 100% at -115% 0%);
+}
+.me-profile{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    animation: 0.5s ease-out 0s 1 slideInFromLeft;
+    overflow: hidden;
+}
+.profile-image{
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-image img{
+    width: 300px;
+    height: 380px;
+    border-radius: 50%;
+}
+.my-name{
+    display: block;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bolder;
+    font-family:'Titillium Web', sans-serif;
+}
+.pucv-studies{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+    overflow: hidden;
+    font-family:'Titillium Web', sans-serif;
+    font-weight: bolder;
+}
+.pucv-image{
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pucv-image img{
+    width:600px;
+    height: 300px;
+    mix-blend-mode: multiply;
+}
+.my-study{
+    display: block;
+    font-size: 20px;
+    color:#000000;
+    font-weight: bold;
+    font-family:'Titillium Web', sans-serif;
+}
+.icon-name{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+    .pucv-image img {
+        width: 200px;
+        height: 75px;
+        mix-blend-mode: multiply;
+    }
+    .profile-image img{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+    }
+    .my-name{
+        font-size:15px;
+    }
+    .my-study{
+        font-size: 15px;
+    }
+}

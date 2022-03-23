@@ -1,0 +1,16 @@
+.about-me{
+    font-family:'Titillium Web', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin: 0 10% 0 10%;
+}
+
+
+
+/* RESPONSIVE */
+@media(max-width:950px){
+    .about-me{
+        font-size: 12px;
+    }
+}

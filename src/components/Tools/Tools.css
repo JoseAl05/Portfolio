@@ -1,0 +1,112 @@
+.tools{
+    overflow: hidden;
+}
+.tools-background{
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    /* animation: 2s ease-out 0s 1 slideInFromDown; */
+}
+.tools-background-items-invisible{
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    box-shadow: none;
+}
+.tools button{
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 auto;
+    justify-content:center;
+    width: 100%;
+}
+.tools-header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    font-family:'Titillium Web', sans-serif;
+    background: linear-gradient(
+        to right,
+        hsl(211, 100%, 23%) 0%,
+        hsl(214deg 89% 29%) 3%,
+        hsl(216deg 79% 35%) 6%,
+        hsl(219deg 68% 41%) 10%,
+        hsl(221deg 57% 46%) 17%,
+        hsl(224deg 47% 52%) 26%,
+        hsl(227deg 36% 58%) 43%,
+        hsl(230deg 25% 64%) 67%,
+        hsl(232deg 14% 70%) 81%,
+        hsl(232deg 14% 67%) 89%,
+        hsl(232deg 13% 65%) 94%,
+        hsl(232deg 12% 62%) 97%,
+        hsl(232deg 11% 59%) 98%,
+        hsl(230deg 10% 57%) 100%,
+        hsl(232deg 9% 54%) 100%,
+        hsl(231deg 9% 52%) 100%,
+        hsl(231deg 8% 49%) 100%
+    );
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.tools-no-display{
+    display:none;
+    justify-content: center;
+    padding-top: 150px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    vertical-align: bottom;
+    grid-gap: 50px;
+    overflow: hidden;
+}
+.tools-icons{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    vertical-align: bottom;
+    grid-gap: 10px;
+    will-change: width, height;
+}
+.icon-name{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Titillium Web', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    will-change: transform, opacity;
+}
+.tools-header .rotate-arrow-up{
+    transition: transform 0.5s ease-in-out 0s;
+    transform: rotate(180deg);
+}
+.tools-header .rotate-arrow-down{
+    transition: transform 0.5s ease-in-out 0s;
+    transform: rotate(0deg);
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+    .tools-header{
+        font-size: 1.5em;
+    }
+    .arrow-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .icon-name{
+        font-size: 12px;
+    }
+    .icon-name .icon{
+        width:25px;
+        height: 25px;
+    }
+}
