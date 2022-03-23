@@ -134,6 +134,9 @@
     .MuiCardHeader-root .MuiTypography-h5{
         font-size: 1rem;
     }
+    .projects-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .projects-grid p{
         font-size: 12px;
     }
