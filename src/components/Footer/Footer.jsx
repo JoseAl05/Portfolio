@@ -27,8 +27,6 @@ const Footer = () =>{
                                     <p> (569) 62141439</p>
                                     <a className="phone-number"><FaPhone/></a>
                                     <a href="mailto: jparancibialinker@gmail.com" target='_blank'><SiGmail/></a>
-                                    <a href="https://www.instagram.com/jotape_a.l/" target='_blank'><FaInstagram/></a>
-                                    <a href="https://twitter.com/JotaPeArancibia" target='_blank'><FaTwitter/></a>
                                     <a href="https://www.linkedin.com/in/jos%C3%A9-pablo-arancibia-linker-340704177/" target='_blank'><FaLinkedin/></a>
                                     <a href="https://github.com/JoseAl05" target='_blank'><FaGithub/></a>
                                     <a href="https://stackoverflow.com/users/11086537/jose-pablo-arancibia-linker" target='_blank'><FaStackOverflow/></a>
